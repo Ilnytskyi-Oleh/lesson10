@@ -1,0 +1,169 @@
+@font-face {
+    font-family: HansKendrick; /* Имя шрифта */
+    src: url(/fonts/HansKendrick-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+
+
+html{
+    background-color: #e2e7ec;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: HansKendrick;
+}
+.product{
+
+    margin: 50px  auto auto auto;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+  
+   
+}
+.item{
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 400px;  
+}
+
+.item:first-child{
+    position: relative;
+    width: 61%;
+    
+}
+
+
+
+.item:first-child:after{
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background-color: #000000;
+	background-image: linear-gradient(315deg, #000000 5%, #ffffff 50%);
+	opacity:0.4;
+}
+
+.flex-item:last-child{
+    margin-top: auto;
+}
+
+.flex-item:nth-of-type(2){
+    margin: 4% 6%;
+}
+
+.flex-item:nth-of-type(2) p:first-child{
+    margin-bottom: 5%;
+}
+
+.first-date{
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+} 
+
+.item:first-child img{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: #000000;  
+}
+
+.first-description{
+    font-weight: bold;
+    position: relative;
+    color: white;
+    font-size: 1.9rem;
+    z-index: 1;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.avatar{
+
+    width: 100%;
+}
+
+.small-img {   
+    width: 40px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.first-title{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+ 
+.date-title{
+    color: #818181;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.first {
+    color: #d8d6d0;
+   
+}
+
+.upload{
+
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.upload p{ 
+     height: 30px;
+}
+.upload p:before{
+    position: relative;
+    top: 25%;
+    margin-right: 10px;
+    content: url(/img/upl.png);
+  
+}
+
+
+@media (max-width: 905px) {
+
+    .item:first-child{
+        width: 90%;
+        background-color: bisque;
+
+    }
+
+    .item{
+        margin: 10px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .avatar{
+    width: 100%; 
+    }
+
+    .small-img {   
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+    .flex-item:nth-of-type(2){
+        margin: 2% 2%;
+    
+    }
+}
